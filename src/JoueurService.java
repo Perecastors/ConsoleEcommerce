@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class JoueurService {
 
-    public static ArrayList<Joueur> listJoueur = new ArrayList<Joueur>();
+    public static ArrayList<Joueur> listJoueur = new ArrayList<>();
 
     public static void initializeListJoueur(){
         ArrayList<Skin> als = new ArrayList<Skin>();

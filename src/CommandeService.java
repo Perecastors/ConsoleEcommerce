@@ -6,11 +6,11 @@ import java.util.ArrayList;
  */
 public class CommandeService {
 
-    public static ArrayList<Commande> listCommande = new ArrayList<Commande>();
+    public static ArrayList<Commande> listCommande = new ArrayList<>();
 
     public static void initListCommandes(){
-        ArrayList<Commande> alc = new ArrayList<Commande>();
-        ArrayList<Skin> als = new ArrayList<Skin>();
+        ArrayList<Commande> alc = new ArrayList<>();
+        ArrayList<Skin> als = new ArrayList<>();
             Skin s = new Skin();
         for (int j = 0; j < 3; j++) {
             for (int i = 0; i < 2; i++) {
@@ -36,7 +36,6 @@ public class CommandeService {
         c.idCommande = CommandeService.getIndexListCommande();
         c.dateCreationCommande = LocalDate.now();
         c.basket = listSkin;
-        //c.basket = new ArrayList<Skin>().add(SkinService.createSkin("nom"+c.idCommande,100,"randomDescription"));
         return c;
     }
 
